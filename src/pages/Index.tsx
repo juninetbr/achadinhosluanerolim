@@ -56,34 +56,34 @@ const Index = () => {
       {/* Tablet & Mobile styles */}
       <style>{`
         @media (max-width: 1024px) {
-          section > div:nth-child(4) {
+          section > div:nth-child(5) {
             padding-left: 2rem !important;
             padding-right: 2rem !important;
           }
-          section > div:nth-child(4) h1,
-          section > div:nth-child(4) p,
-          section > div:nth-child(4) a {
+          section > div:nth-child(5) h1,
+          section > div:nth-child(5) p,
+          section > div:nth-child(5) a {
             margin-left: 0 !important;
             margin-right: 0 !important;
           }
-          section > div:nth-child(4) > div {
+          section > div:nth-child(5) > div {
             max-width: 100% !important;
           }
         }
         @media (max-width: 768px) {
-          section > div:nth-child(2) {
+          section > div:nth-child(3) {
             background: rgba(0,0,0,0.55) !important;
           }
-          section > div:nth-child(3) {
+          section > div:nth-child(4) {
             background: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 100%) !important;
           }
-          section > div:nth-child(4) {
+          section > div:nth-child(5) {
             padding-left: 1.5rem !important;
             padding-right: 1.5rem !important;
             align-items: flex-end !important;
             padding-bottom: 3rem !important;
           }
-          section > div:nth-child(4) a {
+          section > div:nth-child(5) a {
             display: block !important;
             text-align: center;
             width: 100%;
