@@ -52,8 +52,23 @@ const Index = () => {
         </div>
       </div>
 
-      {/* Mobile styles */}
+      {/* Tablet & Mobile styles */}
       <style>{`
+        @media (max-width: 1024px) {
+          section > div:nth-child(4) {
+            padding-left: 2rem !important;
+            padding-right: 2rem !important;
+          }
+          section > div:nth-child(4) h1,
+          section > div:nth-child(4) p,
+          section > div:nth-child(4) a {
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+          }
+          section > div:nth-child(4) > div {
+            max-width: 100% !important;
+          }
+        }
         @media (max-width: 768px) {
           section > div:nth-child(2) {
             background: rgba(0,0,0,0.55) !important;
@@ -66,9 +81,6 @@ const Index = () => {
             padding-right: 1.5rem !important;
             align-items: flex-end !important;
             padding-bottom: 3rem !important;
-          }
-          section > div:nth-child(4) > div {
-            max-width: 100% !important;
           }
           section > div:nth-child(4) a {
             display: block !important;
