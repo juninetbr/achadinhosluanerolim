@@ -8,7 +8,7 @@ const Index = () => {
       <img
         src={heroBg}
         alt="Mulher sorrindo em ambiente aconchegante de casa"
-        className="absolute right-0 top-0 h-full w-auto max-w-full object-contain object-right"
+        className="absolute inset-0 w-full h-full object-contain object-right"
       />
 
       {/* Subtle dark overlay */}
