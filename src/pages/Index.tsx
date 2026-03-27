@@ -10,14 +10,14 @@ const Index = () => {
         className="absolute inset-0 w-full h-full object-cover object-center"
       />
 
-      {/* Dark overlay */}
-      <div className="absolute inset-0 bg-black/45" />
+      {/* Subtle dark overlay */}
+      <div className="absolute inset-0 bg-black/25" />
 
-      {/* Left-to-right gradient for text readability */}
+      {/* Left-to-right gradient — covers text area only, fades out smoothly */}
       <div
         className="absolute inset-0"
         style={{
-          background: "linear-gradient(to right, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.6) 35%, rgba(0,0,0,0) 65%)",
+          background: "linear-gradient(to right, rgba(0,0,0,0.82) 0%, rgba(0,0,0,0.65) 25%, rgba(0,0,0,0.3) 42%, rgba(0,0,0,0) 55%)",
         }}
       />
 
