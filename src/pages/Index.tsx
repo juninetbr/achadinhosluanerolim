@@ -4,10 +4,11 @@ const Index = () => {
   return (
     <section className="relative w-full h-screen overflow-hidden">
       {/* Background image */}
+      <div className="absolute inset-0 bg-black" />
       <img
         src={heroBg}
         alt="Mulher sorrindo em ambiente aconchegante de casa"
-        className="absolute inset-0 w-full h-full object-cover object-top"
+        className="absolute right-0 top-0 h-full w-auto max-w-full object-contain object-right"
       />
 
       {/* Subtle dark overlay */}
