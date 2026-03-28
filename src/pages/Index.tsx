@@ -47,7 +47,7 @@ const Index = () => {
         <img
           src={heroBg}
           alt="Mulher sorrindo em ambiente aconchegante de casa"
-          className="absolute inset-0 w-full h-full object-cover object-right"
+          className="absolute inset-0 w-full h-full object-contain object-right bg-background"
         />
 
         {/* Subtle overlay */}
@@ -64,7 +64,7 @@ const Index = () => {
 
         {/* Content */}
         <div className="relative z-10 flex items-center h-full px-[72px] lg:px-24">
-          <div className="max-w-[380px] lg:max-w-[420px]">
+          <div className="max-w-[480px] lg:max-w-[500px]">
             <h1
               className="text-foreground font-bold leading-[1.15] mb-6"
               style={{ fontSize: "clamp(28px, 3.5vw, 52px)" }}
@@ -75,7 +75,7 @@ const Index = () => {
               em um só lugar!
             </h1>
 
-            <p className="text-foreground/80 text-sm lg:text-base leading-[1.5] mb-8 max-w-[340px]">
+            <p className="text-muted-foreground text-base lg:text-lg leading-[1.5] mb-8 max-w-[440px]">
               Você não precisa perder tempo procurando. A gente já filtrou o
               que realmente compensa, só coisa útil, prática e que faz
               diferença no dia a dia. Tá tudo no grupo.
