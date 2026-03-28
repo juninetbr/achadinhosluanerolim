@@ -4,13 +4,16 @@ const Index = () => {
   return (
     <section className="w-full h-screen overflow-hidden flex flex-col md:flex-row">
       {/* Mobile: image on top */}
-      <div className="md:hidden w-full h-[45vh] flex-shrink-0 relative">
+      <div className="md:hidden w-full h-[40vh] flex-shrink-0 relative">
         <img
           src={heroBg}
           alt="Mulher sorrindo em ambiente aconchegante de casa"
           className="w-full h-full object-contain object-center bg-background"
         />
       </div>
+
+      {/* Mobile: spacer */}
+      <div className="md:hidden h-6 flex-shrink-0 bg-background" />
 
       {/* Mobile: text below */}
       <div className="md:hidden flex-1 flex flex-col justify-center px-6 py-6 bg-background overflow-y-auto">
@@ -51,14 +54,14 @@ const Index = () => {
         />
 
         {/* Subtle overlay */}
-        <div className="absolute inset-0 bg-black/15" />
+        <div className="absolute inset-0 bg-black/8" />
 
         {/* Left gradient for text readability - ends at ~50% */}
         <div
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(to right, rgba(0,0,0,0.80) 0%, rgba(0,0,0,0.55) 30%, rgba(0,0,0,0) 55%)",
+              "linear-gradient(to right, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.45) 30%, rgba(0,0,0,0) 50%)",
           }}
         />
 
