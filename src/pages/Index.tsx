@@ -2,18 +2,15 @@ import heroBg from "@/assets/hero-bg.png";
 
 const Index = () => {
   return (
-    <section className="w-full h-screen overflow-hidden flex flex-col sm:flex-row">
+    <section className="w-full sm:h-screen sm:overflow-hidden flex flex-col sm:flex-row overflow-y-auto">
       {/* Mobile: image on top */}
-      <div className="sm:hidden w-full h-[40vh] flex-shrink-0 relative">
+      <div className="sm:hidden w-full flex-shrink-0 relative">
         <img
           src={heroBg}
           alt="Mulher sorrindo em ambiente aconchegante de casa"
-          className="w-full h-full object-contain object-center bg-background"
+          className="w-full h-auto object-contain"
         />
       </div>
-
-      {/* Mobile: spacer */}
-      <div className="sm:hidden h-20 flex-shrink-0 bg-background" />
 
       {/* Mobile: text below */}
       <div className="sm:hidden flex-1 flex flex-col justify-center px-6 py-6 bg-background overflow-y-auto">
