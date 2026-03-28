@@ -2,9 +2,9 @@ import heroBg from "@/assets/hero-bg.png";
 
 const Index = () => {
   return (
-    <section className="w-full h-screen overflow-hidden flex flex-col md:flex-row">
+    <section className="w-full h-screen overflow-hidden flex flex-col sm:flex-row">
       {/* Mobile: image on top */}
-      <div className="md:hidden w-full h-[40vh] flex-shrink-0 relative">
+      <div className="sm:hidden w-full h-[40vh] flex-shrink-0 relative">
         <img
           src={heroBg}
           alt="Mulher sorrindo em ambiente aconchegante de casa"
@@ -13,10 +13,10 @@ const Index = () => {
       </div>
 
       {/* Mobile: spacer */}
-      <div className="md:hidden h-6 flex-shrink-0 bg-background" />
+      <div className="sm:hidden h-8 flex-shrink-0 bg-background" />
 
       {/* Mobile: text below */}
-      <div className="md:hidden flex-1 flex flex-col justify-center px-6 py-6 bg-background overflow-y-auto">
+      <div className="sm:hidden flex-1 flex flex-col justify-center px-6 py-6 bg-background overflow-y-auto">
         <h1
           className="text-foreground font-bold leading-[1.15] mb-4"
           style={{ fontSize: "28px" }}
@@ -45,7 +45,7 @@ const Index = () => {
       </div>
 
       {/* Desktop / Tablet layout */}
-      <div className="hidden md:flex w-full h-screen relative">
+      <div className="hidden sm:flex w-full h-screen relative">
         {/* Background image - full, no crop */}
         <img
           src={heroBg}
