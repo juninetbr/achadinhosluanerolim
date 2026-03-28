@@ -18,8 +18,10 @@ const Index = () => {
           className="text-foreground font-bold leading-[1.15] mb-4"
           style={{ fontSize: "28px" }}
         >
-          Os achados pra casa que{" "}
-          <span className="text-accent">fazem sentido</span>, num só lugar
+          Os achados para<br />
+          sua casa que<br />
+          <span className="text-accent">fazem sentido</span>,<br />
+          em um só lugar!
         </h1>
         <p className="text-muted-foreground text-[15px] leading-[1.5] mb-6">
           Você não precisa perder tempo procurando. A gente já filtrou o que
@@ -67,9 +69,10 @@ const Index = () => {
               className="text-foreground font-bold leading-[1.15] mb-6"
               style={{ fontSize: "clamp(28px, 3.5vw, 52px)" }}
             >
-              Os achados pra casa que{" "}
-              <span className="text-accent">fazem sentido</span>, num só
-              lugar
+              Os achados para<br />
+              sua casa que<br />
+              <span className="text-accent">fazem sentido</span>,<br />
+              em um só lugar!
             </h1>
 
             <p className="text-muted-foreground text-base lg:text-lg leading-[1.5] mb-8 max-w-[440px]">
