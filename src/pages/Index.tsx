@@ -13,7 +13,7 @@ const Index = () => {
       </div>
 
       {/* Mobile: spacer */}
-      <div className="sm:hidden h-8 flex-shrink-0 bg-background" />
+      <div className="sm:hidden h-20 flex-shrink-0 bg-background" />
 
       {/* Mobile: text below */}
       <div className="sm:hidden flex-1 flex flex-col justify-center px-6 py-6 bg-background overflow-y-auto">
