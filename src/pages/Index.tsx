@@ -1,5 +1,6 @@
 import { useState } from "react";
 import heroBg from "@/assets/hero-bg.png";
+import heroBgDesktop from "@/assets/hero-bg-desktop.jpg";
 import {
   Dialog,
   DialogContent,
@@ -80,7 +81,7 @@ const Index = () => {
         {/* Desktop / Tablet layout */}
         <div className="hidden sm:flex w-full h-screen relative">
           <img
-            src={heroBg}
+            src={heroBgDesktop}
             alt="Mulher sorrindo em ambiente aconchegante de casa"
             className="absolute inset-0 w-full h-full object-contain object-right bg-background"
           />
