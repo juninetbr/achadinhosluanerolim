@@ -44,7 +44,7 @@ const Index = () => {
         {/* Mobile: image on top */}
         <div className="sm:hidden w-full flex-shrink-0 relative">
           <img
-            src={heroBg}
+            src={heroBgMobile}
             alt="Mulher sorrindo em ambiente aconchegante de casa"
             className="w-full h-auto object-contain"
           />
