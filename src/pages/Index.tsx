@@ -20,11 +20,6 @@ const Index = () => {
     setShowConsent(true);
   };
 
-  const handleConfirm = () => {
-    setShowConsent(false);
-    window.open(WHATSAPP_URL, "_blank", "noopener,noreferrer");
-  };
-
   const lgpdNotice = (
     <p className="text-muted-foreground text-xs mt-2 opacity-60">
       Seus dados (nome e telefone) serão usados apenas para acesso ao grupo.{" "}
