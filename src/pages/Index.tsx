@@ -1,5 +1,5 @@
 import { useState } from "react";
-import heroBg from "@/assets/hero-bg.png";
+import heroBgMobile from "@/assets/hero-bg-mobile.jpg";
 import heroBgDesktop from "@/assets/hero-bg-desktop.jpg";
 import {
   Dialog,
@@ -44,7 +44,7 @@ const Index = () => {
         {/* Mobile: image on top */}
         <div className="sm:hidden w-full flex-shrink-0 relative">
           <img
-            src={heroBg}
+            src={heroBgMobile}
             alt="Mulher sorrindo em ambiente aconchegante de casa"
             className="w-full h-auto object-contain"
           />
