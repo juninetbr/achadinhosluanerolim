@@ -1,5 +1,5 @@
 import { useState } from "react";
-import heroBg from "@/assets/hero-bg.png";
+import heroBgMobile from "@/assets/hero-bg-mobile.jpg";
 import heroBgDesktop from "@/assets/hero-bg-desktop.jpg";
 import {
   Dialog,
