@@ -155,12 +155,15 @@ const Index = () => {
             </DialogDescription>
           </DialogHeader>
           <div className="flex flex-col gap-3 mt-2">
-            <button
-              onClick={handleConfirm}
-              className="w-full bg-accent text-accent-foreground font-semibold text-[15px] rounded-lg px-6 py-3 cursor-pointer transition-all duration-200 ease-in-out hover:scale-[1.02] active:scale-[0.98]"
+            <a
+              href={WHATSAPP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setShowConsent(false)}
+              className="w-full block text-center bg-accent text-accent-foreground font-semibold text-[15px] rounded-lg px-6 py-3 cursor-pointer transition-all duration-200 ease-in-out hover:scale-[1.02] active:scale-[0.98]"
             >
               Continuar para o WhatsApp
-            </button>
+            </a>
             <button
               onClick={() => setShowConsent(false)}
               className="w-full text-muted-foreground font-medium text-[14px] rounded-lg px-6 py-2.5 cursor-pointer border border-border hover:bg-muted transition-colors"
