@@ -9,7 +9,7 @@ import {
   DialogDescription,
 } from "@/components/ui/dialog";
 
-const WHATSAPP_URL = "https://chat.whatsapp.com/SEU_LINK_AQUI";
+const WHATSAPP_URL = "https://chat.whatsapp.com/ExU0P1xeWmEGaVH4DFwN7L";
 
 const Index = () => {
   const [showConsent, setShowConsent] = useState(false);
