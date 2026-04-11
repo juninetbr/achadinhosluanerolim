@@ -12,13 +12,7 @@ import {
 const WHATSAPP_URL = "https://chat.whatsapp.com/ExU0P1xeWmEGaVH4DFwN7L";
 
 const Index = () => {
-  const [showConsent, setShowConsent] = useState(false);
   const [showPrivacy, setShowPrivacy] = useState(false);
-
-  const handleCtaClick = (e: React.MouseEvent) => {
-    e.preventDefault();
-    setShowConsent(true);
-  };
 
   const lgpdNotice = (
     <p className="text-muted-foreground text-xs mt-2 opacity-60">
@@ -61,12 +55,14 @@ const Index = () => {
             realmente compensa, só coisa útil, prática e que faz diferença no
             dia a dia. Tá tudo no grupo.
           </p>
-          <button
-            onClick={handleCtaClick}
+          <a
+            href={WHATSAPP_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="block w-full text-center bg-accent text-accent-foreground font-semibold text-[16px] rounded-lg px-7 py-3.5 cursor-pointer transition-all duration-200 ease-in-out hover:scale-105 active:scale-[0.97]"
           >
             ENTRAR NO GRUPO
-          </button>
+          </a>
           <p className="text-muted-foreground text-sm mt-3 opacity-70">
             Acesso direto pelo WhatsApp
           </p>
@@ -109,12 +105,14 @@ const Index = () => {
                 diferença no dia a dia. Tá tudo no grupo.
               </p>
 
-              <button
-                onClick={handleCtaClick}
+              <a
+                href={WHATSAPP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-block bg-accent text-accent-foreground font-semibold text-[17px] rounded-lg px-7 py-3.5 cursor-pointer transition-all duration-200 ease-in-out hover:scale-105 hover:shadow-[0_8px_24px_rgba(255,214,0,0.3)] active:scale-[0.97]"
               >
                 ENTRAR NO GRUPO
-              </button>
+              </a>
 
               <p className="text-muted-foreground text-sm mt-3 opacity-70">
                 Acesso direto pelo WhatsApp
@@ -124,50 +122,6 @@ const Index = () => {
           </div>
         </div>
       </section>
-
-      {/* Pop-up de Consentimento */}
-      <Dialog open={showConsent} onOpenChange={setShowConsent}>
-        <DialogContent className="sm:max-w-[440px] rounded-2xl border-border">
-          <DialogHeader>
-            <DialogTitle className="text-xl font-bold">
-              Falta só um passo 👇
-            </DialogTitle>
-            <DialogDescription className="text-muted-foreground text-sm leading-relaxed pt-3 space-y-3">
-              <span className="block">
-                Você será direcionado para o WhatsApp para entrar no grupo.
-              </span>
-              <span className="block">
-                Ao continuar, você concorda em compartilhar seu nome e número de
-                telefone para participar e receber conteúdos e ofertas.
-              </span>
-              <span className="block">
-                Seus dados não serão armazenados fora do WhatsApp nem
-                compartilhados com terceiros.
-              </span>
-              <span className="block">
-                Você pode sair do grupo a qualquer momento.
-              </span>
-            </DialogDescription>
-          </DialogHeader>
-          <div className="flex flex-col gap-3 mt-2">
-            <a
-              href={WHATSAPP_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={() => setShowConsent(false)}
-              className="w-full block text-center bg-accent text-accent-foreground font-semibold text-[15px] rounded-lg px-6 py-3 cursor-pointer transition-all duration-200 ease-in-out hover:scale-[1.02] active:scale-[0.98]"
-            >
-              Continuar para o WhatsApp
-            </a>
-            <button
-              onClick={() => setShowConsent(false)}
-              className="w-full text-muted-foreground font-medium text-[14px] rounded-lg px-6 py-2.5 cursor-pointer border border-border hover:bg-muted transition-colors"
-            >
-              Cancelar
-            </button>
-          </div>
-        </DialogContent>
-      </Dialog>
 
       {/* Modal de Privacidade */}
       <Dialog open={showPrivacy} onOpenChange={setShowPrivacy}>
