@@ -64,7 +64,7 @@ const Index = () => {
             ENTRAR NO GRUPO
           </a>
           <p className="text-muted-foreground text-sm mt-3 opacity-70">
-            Acesso direto pelo WhatsApp
+            Acesso direto pelo WhatsApp. Ao clicar, você concorda com o uso dos seus dados.
           </p>
           {lgpdNotice}
         </div>
@@ -115,7 +115,7 @@ const Index = () => {
               </a>
 
               <p className="text-muted-foreground text-sm mt-3 opacity-70">
-                Acesso direto pelo WhatsApp
+                Acesso direto pelo WhatsApp. Ao clicar, você concorda com o uso dos seus dados.
               </p>
               {lgpdNotice}
             </div>
